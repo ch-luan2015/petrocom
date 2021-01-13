@@ -41,32 +41,32 @@ const Routers = () => (
         <AuthLogin path="/login">
           <LoginPage />
         </AuthLogin>
-        <Redirect exact from = "/admin" to="/admin/dashboard" />
+        <Redirect exact from="/admin" to="/admin/dashboard" />
 
-        <Route exact path= {['/admin/dashboard','/admin/usermanage']} render={() =>
-        <LayOut>
-          <Suspense
-            fallback={
-              <Spin
-                size='large'
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  height: 'calc(76.5vh - 46px)',
-                  color: '#000000',
-                }}
-              />
-            }
-          >
-            <Auth path="/admin/dashboard">
-              <AdminDashBoardPage />
-            </Auth>
-            <Auth path="/admin/usermanage">
-              <UserManagePage />
-            </Auth>
-          </Suspense>
-        </LayOut>} />
+        <Route exact path={['/admin/dashboard', '/admin/usermanage']} render={() =>
+          <LayOut>
+            <Suspense
+              fallback={
+                <Spin
+                  size='large'
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    height: 'calc(76.5vh - 46px)',
+                    color: '#000000',
+                  }}
+                />
+              }
+            >
+              <Auth path="/admin/dashboard">
+                <AdminDashBoardPage />
+              </Auth>
+              <Auth path="/admin/usermanage">
+                <UserManagePage />
+              </Auth>
+            </Suspense>
+          </LayOut>} />
 
         <Route path="*" component={PageNotFound} />
       </Switch>

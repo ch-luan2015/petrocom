@@ -1,3 +1,40 @@
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  ul li {
+    display: inline-block;
+  }
+
+  .txt-right {
+    text-align: right;
+  }
+
+  .txt-center {
+    text-align: center;
+  }
+
+  .txt-left {
+    text-align: left;
+  }
+
+
 /* header */
 
 /* navigation */
@@ -323,9 +360,16 @@ background-color: #212121;
 
 /* banner */
 
+.main-top {
+    background:  no-repeat bottom;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    min-height: 800px;
+  }
 .header-top {
-    width: 500px;
-    background-image: url("../../../image/b3.jpg");
     background-size: cover;
     background: no-repeat;
     position: absolute;
@@ -376,6 +420,24 @@ button.btn1:hover,
 .sent-butnn:hover {
     opacity: 0.9;
 }
+
+/* end banner */
+/* about */
+
+.about-oil-w3layouts {
+    padding: 3em 1em;
+    color: #000;
+    background: #efefef;
+    box-shadow: 0px 0px 10px #cecece;
+  }
+
+  .about-icon span {
+    font-size: 40px;
+    color: #113c69;
+  }
+
+
+  /*--// about-- */
 
 /*--responsive--*/
 
