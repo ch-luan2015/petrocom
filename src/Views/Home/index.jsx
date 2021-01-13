@@ -12,12 +12,15 @@ const imgCarousel = [
   { name: "banner02.jpg" },
 ]
 
+
 var settingsBanner = {
   dots: false,
   infinite: true,
   speed: 500,
   slidesToShow: 1,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 3000,
 };
 const Home = () => {
 

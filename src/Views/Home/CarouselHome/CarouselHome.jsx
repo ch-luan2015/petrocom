@@ -24,14 +24,14 @@ const CarouselHome = ({ arrayImage, settings }) => {
 
   const renderCarousel = () => {
     return arrayImage.map((item) => {
-      return <div key={item.name}>
-        <h3><img src={`/image/Banner/${item.name}`} style={{ objectFit: "cover", width: "100%" }} /></h3>
+      return <div key={item.name} >
+        <img src={`/image/Banner/${item.name}`} style={{ objectFit: "cover", width: "100%" }} />
       </div>
     })
   }
 
   return (
-    <Slider {...settings}>
+    <Slider {...settings} style={{ width: "1280px", margin: "0 auto" }}>
       {renderCarousel()}
     </Slider>
   );
@@ -39,8 +39,8 @@ const CarouselHome = ({ arrayImage, settings }) => {
 
 
 CarouselHome.propTypes = {
-  arrayImage: PropTypes.array.isRequired,
-  settings: PropTypes.data.isRequired
+  arrayImage: PropTypes.array,
+  settings: PropTypes.data
 };
 
 export default CarouselHome;
