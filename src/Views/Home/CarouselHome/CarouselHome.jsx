@@ -5,33 +5,18 @@ import PropTypes from 'prop-types';
 
 
 
-const CarouselHome = ({ arrayImage, settings }) => {
-
-  // const imgCarousel = [
-  //   { name: "1banner.jpg" },
-  //   { name: "123.jpg" },
-  //   { name: "b-003.jpg" },
-  //   { name: "banner01.jpg" },
-  //   { name: "banner02.jpg" },
-  // ]
-  // var settings = {
-  //   dots: false,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1
-  // };
+const CarouselHome = ({ arrayImage, settings, style, widthSlide }) => {
 
   const renderCarousel = () => {
     return arrayImage.map((item) => {
-      return <div key={item.name} >
-        <img src={`/image/Banner/${item.name}`} style={{ objectFit: "cover", width: "100%" }} />
+      return <div key={item.url} style={style}>
+        <img src={`${item.url}`} style={{ objectFit: "cover", width: "100%" }} />
       </div>
     })
   }
 
   return (
-    <Slider {...settings} style={{ width: "1280px", margin: "0 auto" }}>
+    <Slider {...settings} style={{ width: widthSlide.width, margin: "0 auto" }} >
       {renderCarousel()}
     </Slider>
   );
@@ -40,7 +25,9 @@ const CarouselHome = ({ arrayImage, settings }) => {
 
 CarouselHome.propTypes = {
   arrayImage: PropTypes.array,
-  settings: PropTypes.data
+  settings: PropTypes.data,
+  style: PropTypes.object,
+  widthSlide: PropTypes.object,
 };
 
 export default CarouselHome;
