@@ -1,14 +1,14 @@
 import React from 'react'
 import { Card } from 'antd';
+import PropTypes from 'prop-types';
 
-// import './CardInfo.scss'
 
 
 const titleStyle = {
   lineHeight: "0.5rem",
   textDecoration: "none",
   display: "flex",
-  alignItem: "flex-top",
+  alignItem: "center",
   justifyContent: "space-between",
   fontSize: "1.1rem",
   fontWeight: "600",
@@ -18,12 +18,18 @@ const titleStyle = {
   backgroundColor: "#f5f5f5"
 };
 
-export default function CardInfo() {
+export default function CardInfo({ title, ...props }) {
   return (
 
-    <Card title="Thông cáo báo chí" bordered={false} headStyle={titleStyle}>
-      Thông báo về trang mạng https://pvoildmcc.com liên quan đến Công ty gọi là &quot;PETROVIETNAM OIL DMCC&quot;
+    <Card title={title} bordered={false} headStyle={titleStyle} >
+      {props.children}
     </Card>
 
   )
+}
+
+CardInfo.propTypes = {
+  children: PropTypes.node.isRequired,
+  title: PropTypes.string
+
 }

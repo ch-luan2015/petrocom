@@ -55,8 +55,8 @@ const Home = () => {
     <>
       <HeaderHome />
       <CarouselHome arrayImage={imgCarousel} settings={settingsBanner} widthSlide={{ width: "960px" }} />
-      <CarouselHome arrayImage={imgBrand} settings={settingsBrand} style={{ padding: "10px" }} widthSlide={{ width: "100%" }} />
       <HighInfo />
+      <CarouselHome arrayImage={imgBrand} settings={settingsBrand} style={{ padding: "10px" }} widthSlide={{ width: "100%" }} />
     </>
   );
 };
