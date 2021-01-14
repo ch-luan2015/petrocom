@@ -1,0 +1,20 @@
+.headStyle {
+    text-decoration: none;
+    display: block;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: flex-top;
+    -webkit-align-items: flex-top;
+    -ms-flex-align: flex-top;
+    align-items: flex-top;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding-left: 0.8rem;
+    padding-top: 0.28rem;
+    color: #eb2329;
+}
