@@ -1,0 +1,38 @@
+.HeaderHome {
+    overflow: hidden;
+    background-color: white;
+    margin-bottom: 2rem;
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    text-align: center;
+    padding: 2rem 0 0.5rem;
+    z-index: 999;
+    border-bottom: 2px solid #f0f0f0;
+    .HeaderHome-Container {
+        max-width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: baseline;
+        justify-content: space-around;
+        .HeaderHome-Logo {
+            font-size: 100%;
+            font-weight: bold;
+            max-width: 20%;
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .HeaderHome-Menu {
+            max-width: 80%;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: all 0.5s ease 0s;
+            border-bottom: none;
+        }
+    }
+}
