@@ -9,10 +9,6 @@ import CardInfo from './CardInfo/CardInfo';
 
 
 
-// const bgImage = {
-//   bg1: ""
-// }
-
 const imgHighInfo = [
   { url: "/image/Banner/tnb0102.png" },
   { url: "/image/Banner/tnb0207a.png" },

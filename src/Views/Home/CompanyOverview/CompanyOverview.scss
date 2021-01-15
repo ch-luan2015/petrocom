@@ -1,0 +1,44 @@
+.CompanyOverview {
+    background-image: url("/image/media/home_bg_6.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    .CompanyOverview_Grid {
+        padding: 3rem 0;
+        .pv-title h1 {
+            font-family: "Encode Sans";
+            color: #48626f;
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            a {
+                color: #48626f;
+                font-size: 2rem;
+                font-weight: 600;
+                text-decoration: none;
+            }
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 50%;
+                width: 1.5px;
+                height: 65px;
+                background: -webkit-gradient(
+                    linear,
+                    left top,
+                    left bottom,
+                    from(#16c1f3),
+                    to(rgba(22, 193, 243, 0))
+                );
+                background: -webkit-linear-gradient(
+                    #16c1f3,
+                    rgba(22, 193, 243, 0)
+                );
+                background: linear-gradient(#16c1f3, rgba(22, 193, 243, 0));
+            }
+        }
+    }
+}
