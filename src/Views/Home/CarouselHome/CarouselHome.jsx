@@ -10,13 +10,13 @@ const CarouselHome = ({ arrayImage, settings, style, widthSlide }) => {
   const renderCarousel = () => {
     return arrayImage.map((item) => {
       return <div key={item.url} style={style}>
-        <img src={`${item.url}`} style={{ objectFit: "cover", width: "100%" }} />
+        <img src={`${item.url}`} style={{ objectFit: "cover", width: "100%", borderRadius: "8px" }} />
       </div>
     })
   }
 
   return (
-    <Slider {...settings} style={{ width: widthSlide.width, margin: "0 auto" }} >
+    <Slider {...settings} style={{ width: widthSlide.width, margin: "0 auto", borderRadius: "8px" }} >
       {renderCarousel()}
     </Slider>
   );

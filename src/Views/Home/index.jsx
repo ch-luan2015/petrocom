@@ -5,7 +5,7 @@ import CarouselHome from './CarouselHome/CarouselHome';
 import HighInfo from './HighInfo/HighInfo';
 import CompanyOverview from './CompanyOverview/CompanyOverview';
 import Customer from './Customer/Customer';
-
+import Information from './Information/Information'
 
 const imgCarousel = [
   { url: "/image/Banner/1banner.jpg" },
@@ -32,7 +32,8 @@ const Home = () => {
   return (
     <>
       <HeaderHome />
-      <CarouselHome arrayImage={imgCarousel} settings={settingsBanner} widthSlide={{ width: "960px" }} />
+      <CarouselHome arrayImage={imgCarousel} settings={settingsBanner} widthSlide={{ width: "1280px" }} />
+      <Information />
       <HighInfo />
       <CompanyOverview />
       <Customer />

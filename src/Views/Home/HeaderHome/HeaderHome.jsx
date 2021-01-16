@@ -8,9 +8,7 @@ var menuItem = [
   { key: 1, name: 'Giới thiệu', url: '#', icon: <MailOutlined /> },
   { key: 2, name: 'Lĩnh vực hoạt động', url: '#', icon: null },
   { key: 3, name: 'Mạng lưới', url: '#', icon: null },
-  { key: 4, name: "Quan hệ cổ đông", url: '#', icon: null },
-  { key: 5, name: "Truyền thông", url: '#', icon: null },
-  { key: 6, name: "An sinh xã hội", url: '#', icon: null }
+  { key: 4, name: "Truyền thông", url: '#', icon: null },
 ]
 const HeaderHome = () => {
 
