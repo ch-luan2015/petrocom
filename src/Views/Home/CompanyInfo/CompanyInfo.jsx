@@ -1,11 +1,66 @@
-import React from 'react'
+import React, { Children } from 'react'
 import { Row, Col } from 'antd';
-import './Information.scss'
-export default function Information() {
+import { Table, Tag, Space } from 'antd';
+
+import './CompanyInfo.scss'
+
+
+
+
+
+
+
+export default function CompanyInfo() {
+  const columns = [
+    {
+      title: 'Gía Bán Lẻ Xăng Dầu',
+      children: [
+        {
+          title: 'Sản phẩm',
+          dataIndex: 'sp',
+          key: 'sp',
+          // eslint-disable-next-line react/display-name
+          return: text => <p style={{ textAlign: "center" }}>{text}</p>,
+        },
+        {
+          title: 'Vùng 1',
+          dataIndex: 'v1',
+          key: 'v1',
+
+        },
+        {
+          title: 'Vùng 2',
+          dataIndex: 'v2',
+          key: 'v2',
+        },
+      ]
+    }
+  ];
+
+  const data = [
+    {
+      key: 'sp',
+      sp: 'Xăng RON 95-III',
+      v1: "15.350 ₫/l",
+      v2: "15.650 ₫/l",
+    },
+    {
+      key: 'sp',
+      sp: 'Xăng E5 RON 92',
+      v1: "15.350 ₫/l",
+      v2: "15.650 ₫/l",
+    },
+    {
+      key: 'sp',
+      sp: 'Xăng RON 95-III',
+      v1: "15.350 ₫/l",
+      v2: "15.650 ₫/l",
+    },
+  ];
   return (
     <section className="Information">
       <Row gutter={[32, 32]} style={{ maxWidth: "1280px", margin: "0 auto" }}>
-        <Col span={16} >
+        <Col span={14} >
           <div className="Information-Left">
             <h1>Công Ty Cổ Phần Thương Mại Dịch Vụ Dầu Khí Hải Phát</h1>
             <p>Được thành lập từ tháng 01/2015, tọa lạc tại địa chỉ 26E, Khu phố 1, phường Quang Vinh, thành phố Biên Hòa, tỉnh Đồng Nai.</p>
@@ -16,13 +71,19 @@ export default function Information() {
 
 
         </Col>
-        <Col span={8}>
+        <Col span={10}>
           <div className="Information-Right">
+
             <div className="Information__OilPrice">
-
-
-
+              <Table
+                columns={columns}
+                dataSource={data}
+                pagination={false}
+                tableLayout="fixed"
+                bordered={true}
+              />
             </div>
+
             <div className="Information__Video">
               <iframe loading="lazy" title="Forge Lubricant - TechKool" width={1020} height={574} src="https://www.youtube.com/embed/s_AXbAaTT1o?feature=oembed" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.youtube.com/embed/s_AXbAaTT1o?feature=oembed" __idm_frm__={1897} className="lazyloaded" data-was-processed="true" />
             </div>
@@ -33,3 +94,4 @@ export default function Information() {
     </section>
   )
 }
+
