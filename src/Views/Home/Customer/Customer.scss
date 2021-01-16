@@ -1,34 +1,35 @@
 .customer {
-    padding: 50px 0;
+    padding: 2rem 2rem;
     background: #e6e6e6;
     .customer-container {
         max-width: 1280px;
         margin: 0 auto;
-        .customer-container__Title h2 {
+        .customer-container__Title {
             text-align: left;
-            margin: 2rem 0;
-            padding: 0;
-            border: 0;
-            color: #333;
-            font: inherit;
-            font-size: 100%;
-            font-weight: 700;
-            vertical-align: baseline;
-            h2:before {
-                content: "";
-                display: block;
-                width: 30px;
-                height: 2px;
-                margin-bottom: 10px;
-                background: #333;
+            margin: 3rem 0;
+            h2 {
+                margin-bottom: 2rem;
+                font-family: "Encode Sans", sans-serif;
+                font-size: 1rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                &:before {
+                    content: "";
+                    display: block;
+                    width: 30px;
+                    height: 2px;
+                    margin-bottom: 10px;
+                    background: #333;
+                }
             }
             p {
                 margin: auto;
-                font-size: 1rem;
-                font-weight: 300;
+                font-size: 1.3rem;
+                font-weight: 400;
             }
         }
         .customer-container__partnerList {
+            margin-bottom: 2rem;
         }
     }
 }

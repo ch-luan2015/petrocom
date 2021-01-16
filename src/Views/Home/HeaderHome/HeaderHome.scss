@@ -15,7 +15,7 @@
         margin: 0 auto;
         display: flex;
         flex-flow: row nowrap;
-        align-items: baseline;
+        align-items: center;
         justify-content: space-around;
         .HeaderHome-Logo {
             font-size: 100%;
@@ -30,9 +30,12 @@
             max-width: 80%;
             text-decoration: none;
             color: white;
-            font-size: 18px;
+            font-family: "Encode Sans";
+            font-size: 1.1rem;
+            font-weight: 500;
             transition: all 0.5s ease 0s;
             border-bottom: none;
+            text-transform: uppercase;
         }
     }
 }

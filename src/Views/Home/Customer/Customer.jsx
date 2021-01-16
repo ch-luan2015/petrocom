@@ -34,7 +34,7 @@ export default function Customer() {
         <div className="customer-container__Title">
           <h2>KHÁCH HÀNG THÂN THIẾT</h2>
           <p>Trên chặng đường phát triển của doanh nghiệp, một đối tác thích hợp là tài sản quý giá.
-          Cánh Cam rất vinh hạnh khi được nhiều khách hàng tin tưởng chọn lựa và gắn bó lâu dài.</p>
+          PPV rất vinh hạnh khi được nhiều khách hàng tin tưởng chọn lựa và gắn bó lâu dài.</p>
         </div>
         <div className="customer-container__partnerList">
           <CarouselHome arrayImage={imgBrand} settings={settingsBrand} style={{ padding: "10px" }} widthSlide={{ width: "100%" }} />
