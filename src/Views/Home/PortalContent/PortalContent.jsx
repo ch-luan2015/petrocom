@@ -1,48 +1,97 @@
 import React from "react";
+import { Row, Col } from 'antd';
+import './PortalContent.scss'
 
 export default function PortalContent() {
   return (
-    <div id="vie_p2_Container" className="sp2 news first">
-      <section id="vie_p2_ContainerTitle">
-        <span>
+    <section className="Portal-main">
+
+      <Row gutter={[8, 8]} className="PC-Left">
+
+        <Col span={16} className="PC-Title1">
           <a href="/tintuc-sukien.html">Tin tức</a>
-        </span>
-      </section>
+        </Col>
+        <Col span={8} className="PC-Title2">
+          <a href="/tintuc-sukien.html">Video</a>
+        </Col>
+
+        <Col span={8} className="content-1">
+          <figure>
+            <a href="/nd/tin-chuyen-nganh/tu-hao-tien-xa-cung-viet-nam.html">
+              <img
+                data-src="https://fs.petrolimex.com.vn/ThumbnailBigPngs/6783DC1271FF449E95B74A9520964169/0/120/0/8B192D63849E463CAF31EE439F748E17/0/223525/Tu-hao-tien-xa-cung-Viet-Nam.png"
+                alt
+                className="vie-lazy"
+                src="https://fs.petrolimex.com.vn/ThumbnailBigPngs/6783DC1271FF449E95B74A9520964169/0/120/0/8B192D63849E463CAF31EE439F748E17/0/223525/Tu-hao-tien-xa-cung-Viet-Nam.png"
+              />
+            </a>
+            <h3>
+              <a href="/nd/tin-chuyen-nganh/tu-hao-tien-xa-cung-viet-nam.html">
+                Petrolimex tự hào tiến xa cùng Việt Nam
+              </a>
+              <p>15/01/2021&nbsp;06:30 CH</p>
+
+            </h3>
+
+            <caption>
+              Chào mừng 65 năm thành lập Tập đoàn Xăng dầu Việt Nam
+              (12.01.1956 - 12.01.2021)
+              Ban biên tập www.petrolimex.com.vn
+              trân trọng gửi đến quý bạn đọc Phim 65 năm Petrolimex Tự hào
+              tiến xa cùng Việt Nam
+            </caption>
 
 
-      <div id="vie_p2_PortletContent">
-        <div className="row">
-          <div className="col-md-6 col-sm-6">
-            <ul className="list-linear cms-list-1">
-              <li>
-                <figure>
-                  <a href="/nd/tin-chuyen-nganh/tu-hao-tien-xa-cung-viet-nam.html">
-                    <img
-                      data-src="https://fs.petrolimex.com.vn/ThumbnailBigPngs/6783DC1271FF449E95B74A9520964169/0/120/0/8B192D63849E463CAF31EE439F748E17/0/223525/Tu-hao-tien-xa-cung-Viet-Nam.png"
-                      alt
-                      className="vie-lazy"
-                      src="https://fs.petrolimex.com.vn/ThumbnailBigPngs/6783DC1271FF449E95B74A9520964169/0/120/0/8B192D63849E463CAF31EE439F748E17/0/223525/Tu-hao-tien-xa-cung-Viet-Nam.png"
-                    />
-                  </a>
-                </figure>
-                <h3>
-                  <a href="/nd/tin-chuyen-nganh/tu-hao-tien-xa-cung-viet-nam.html">
-                    Petrolimex tự hào tiến xa cùng Việt Nam
-                  </a>
-                </h3>
-                <div>
-                  <span>15/01/2021&nbsp;06:30 CH</span>
-                </div>
-                <section>
-                  Chào mừng 65 năm thành lập Tập đoàn Xăng dầu Việt Nam
-                  (12.01.1956 - 12.01.2021), Ban biên tập www.petrolimex.com.vn
-                  trân trọng gửi đến quý bạn đọc Phim 65 năm Petrolimex Tự hào
-                  tiến xa cùng Việt Nam
-                </section>
-              </li>
-            </ul>
-          </div>
-          <div className="col-md-6 col-sm-6 cms-sub-item-1">
+          </figure>
+
+        </Col>
+        <Col span={8} className="content-1">
+          <figure>
+            <a href="/nd/tin-chuyen-nganh/tu-hao-tien-xa-cung-viet-nam.html">
+              <img
+                data-src="https://fs.petrolimex.com.vn/ThumbnailBigPngs/6783DC1271FF449E95B74A9520964169/0/120/0/8B192D63849E463CAF31EE439F748E17/0/223525/Tu-hao-tien-xa-cung-Viet-Nam.png"
+                alt
+                className="vie-lazy"
+                src="https://fs.petrolimex.com.vn/ThumbnailBigPngs/6783DC1271FF449E95B74A9520964169/0/120/0/8B192D63849E463CAF31EE439F748E17/0/223525/Tu-hao-tien-xa-cung-Viet-Nam.png"
+              />
+            </a>
+            <h3>
+              <a href="/nd/tin-chuyen-nganh/tu-hao-tien-xa-cung-viet-nam.html">
+                Petrolimex tự hào tiến xa cùng Việt Nam
+              </a>
+              <p>15/01/2021&nbsp;06:30 CH</p>
+
+            </h3>
+
+            <caption>
+              Chào mừng 65 năm thành lập Tập đoàn Xăng dầu Việt Nam
+              (12.01.1956 - 12.01.2021)
+              Ban biên tập www.petrolimex.com.vn
+              trân trọng gửi đến quý bạn đọc Phim 65 năm Petrolimex Tự hào
+              tiến xa cùng Việt Nam
+            </caption>
+          </figure>
+        </Col>
+
+
+
+        <Col span={8} className="Information__Video">
+          <figure>
+            <iframe loading="lazy" title="Forge Lubricant - TechKool" width={1020} height={574} src="https://www.youtube.com/embed/s_AXbAaTT1o?feature=oembed" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.youtube.com/embed/s_AXbAaTT1o?feature=oembed" __idm_frm__={1897} className="lazyloaded" data-was-processed="true" />
+            <figcaption>Đồng hành cùng Hải Phát</figcaption>
+          </figure>
+
+        </Col>
+      </Row>
+
+
+
+
+
+
+
+
+      {/* <div className="col-md-6 col-sm-6 cms-sub-item-1">
             <ul>
               <li>
                 <a
@@ -53,8 +102,6 @@ export default function PortalContent() {
                   65 năm một dòng chảy&nbsp;(15/01/2021)
                 </a>
               </li>
-
-
               <li>
                 <a
                   href="/nd/tin-chuyen-nganh/tin-anh-petrolimex-plx-tong-ket-2020-trien-khai-nhiem-vu-2021.html"
@@ -66,9 +113,9 @@ export default function PortalContent() {
                 </a>
               </li>
             </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+          </div> */}
+
+
+    </section >
   );
 }

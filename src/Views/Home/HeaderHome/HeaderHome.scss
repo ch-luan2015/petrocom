@@ -3,13 +3,13 @@
     background-color: white;
     margin-bottom: 2rem;
     width: 100%;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
     text-align: center;
     padding: 2rem 0 0.5rem;
-    z-index: 999;
     border-bottom: 2px solid #f0f0f0;
+    // position: -webkit-sticky;
+    // position: sticky;
+    // top: 0px;
+    // z-index: 99;
     .HeaderHome-Container {
         max-width: 1280px;
         margin: 0 auto;

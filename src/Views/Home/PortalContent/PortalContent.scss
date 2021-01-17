@@ -1,0 +1,94 @@
+.Portal-main {
+    max-width: 1280px;
+    margin: 0 auto;
+
+    .PC-Left {
+        .PC-Title1 {
+            width: 100%;
+            text-align: left;
+            position: relative;
+            z-index: 1;
+            a {
+                font-family: "Encode Sans";
+                color: #48626f;
+                text-align: center;
+                font-size: 2.5rem;
+                font-weight: 700;
+            }
+            &::before {
+                content: " ";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 1px;
+                width: 98%;
+                border-bottom: 3px solid #f7a360;
+            }
+        }
+        .PC-Title2 {
+            width: 100%;
+            text-align: left;
+            position: relative;
+            z-index: 1;
+            a {
+                font-family: "Encode Sans";
+                color: #48626f;
+                text-align: center;
+                font-size: 2.5rem;
+                font-weight: 700;
+            }
+            &::before {
+                content: " ";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 1px;
+                width: 100%;
+                border-bottom: 3px solid #f7a360;
+            }
+        }
+        .content-1 {
+            figure {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: flex-start;
+                h3 {
+                    width: 60%;
+                    text-align: left;
+                    a {
+                        font-size: 1.125rem;
+                        font-weight: 500;
+                        color: #0d5cab !important;
+                    }
+                    p {
+                        font-size: 1rem;
+                        color: gray;
+                        font-weight: 400;
+                        text-align: left;
+                    }
+                }
+                caption {
+                    text-align: left;
+                    font-size: 1.124rem;
+                    padding: 0 1rem;
+                }
+            }
+        }
+    }
+    .Information__Video {
+        width: 100%;
+        figure {
+            iframe {
+                padding-top: 1rem;
+                width: 100%;
+                height: 250px;
+            }
+            figcaption {
+                font-size: 1.125rem;
+                font-weight: 500;
+            }
+        }
+    }
+}
