@@ -1,13 +1,12 @@
 import React from 'react'
-import { Row, Col } from 'antd';
-import './CompanyOverview.scss';
-import { Button } from 'antd';
+import { Row, Col, Button } from 'antd';
 import { RightOutlined } from '@ant-design/icons';
+import styles from './CompanyOverview.module.scss';
 
 
 
 
-var aOverView = [
+const aOverView = [
   {
     img: "/image/News/home_icon_1.png",
     title: "80.294 tỷ VNĐ",
@@ -41,42 +40,47 @@ var aOverView = [
 ]
 
 
-export default function CompanyOverview() {
+function CompanyOverview() {
 
   const renderItemView = () => {
     return aOverView.map((item, index) => {
       return (
-        <Col span={8} key={index}>
-          <figure className="ViewItem">
-            <div className="ViewItem-Logo" >
+        <Col span={8} key={index} >
+          <figure className={styles.ViewItem}>
+            <div className={styles.ViewItem_Logo} >
               <img src={item.img} alt={item.img} title={item.img} />
             </div>
-            <figcaption className="ViewItem-Caption">
-              <h5 className="ViewItem-Caption__Title">{item.title}</h5>
-              <p className="ViewItem-Caption__Caption">{item.caption}</p>
+            <figcaption className={styles.ViewItem_Caption}>
+              <h5 className={styles.ViewItem_Caption__Title}>{item.title}</h5>
+              <p className={styles.ViewItem_Caption__Caption}>{item.caption}</p>
             </figcaption>
           </figure>
         </Col>
       )
     })
   }
+
+
   return (
-    <section className="CompanyOverview" style={{ backgroundImage: 'url("./image/media/home_bg_6.png")' }}>
-      <div className="CompanyOverview_Grid">
-        <div className="Grid-Title pv-title">
+    <section className={styles.CompanyOverview} style={{ backgroundImage: 'url("./image/media/home_bg_6.png")' }}>
+      <div className={styles.CompanyOverview_Grid}>
+        <div className={styles.pv_title}>
           <h1>Tổng quan PPV</h1>
         </div>
-        <Row gutter={[32, 32]} style={{ maxWidth: "1280px", margin: "3rem auto" }}>
+        <Row gutter={[12, 12]} className={styles.CompanyOverview_Grid__Content}>
           {renderItemView()}
         </Row>
 
 
-        <div style={{ width: "100%", margin: "1rem 0" }}>
+        <div className={styles.btn_ViewMore}>
           <Button type="danger" shape="round" size="large" >
             Xem Thêm <RightOutlined />
           </Button>
         </div>
+
       </div>
     </section>
   )
 }
+
+export default CompanyOverview

@@ -1,6 +1,6 @@
 import React, { Children } from 'react'
 import { Row, Col } from 'antd';
-import { Table, Tag, Space } from 'antd';
+import { Table } from 'antd';
 
 import './CompanyInfo.scss'
 

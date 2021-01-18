@@ -1,16 +1,19 @@
+@import "../../../styles/core.scss";
+
 .customer {
     padding: 2rem 2rem;
-    background: #f7fafc;
-    .customer-container {
+    background: $white;
+    margin-bottom: 3rem;
+    .customer_container {
         max-width: 1280px;
         margin: 0 auto;
-        .customer-container__Title {
+        .customer_container__Title {
             text-align: left;
             margin: 3rem 0;
             h2 {
                 margin-bottom: 2rem;
                 font-family: "Encode Sans", sans-serif;
-                font-size: 1rem;
+                font-size: 1.1rem;
                 font-weight: 700;
                 text-transform: uppercase;
                 &:before {
@@ -27,8 +30,11 @@
                 font-size: 1.3rem;
                 font-weight: 400;
             }
+            @include media(phone) {
+                margin-right: 0;
+            }
         }
-        .customer-container__partnerList {
+        .customer_container__partnerList {
             margin-bottom: 2rem;
         }
     }

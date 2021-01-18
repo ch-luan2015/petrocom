@@ -1,13 +1,13 @@
 import React from 'react';
-import "./Home.scss"
+import styles from "./Home.module.scss"
 import HeaderHome from "./HeaderHome/HeaderHome"
 import CarouselHome from './CarouselHome/CarouselHome';
-import HighInfo from './HighInfo/HighInfo';
 import CompanyOverview from './CompanyOverview/CompanyOverview';
 import Customer from './Customer/Customer';
 import CompanyInfo from './CompanyInfo/CompanyInfo';
 import PortalContent from './PortalContent/PortalContent'
 import DistributionSystem from './DistributionSystem/DistributionSystem'
+import FooterHome from './FooterHome/FooterHome';
 
 const imgCarousel = [
   { url: "/image/Banner/1banner.jpg" },
@@ -40,6 +40,7 @@ const Home = () => {
       <DistributionSystem />
       <CompanyOverview />
       <Customer />
+      <FooterHome />
     </>
   );
 };
