@@ -47,7 +47,7 @@ export default function HighInfo() {
           Xem Thêm <RightOutlined />
         </Button>
       </div>
-      <section className="HighInfo-News">
+      <section className="HighInfo-News" style={{ backgroundImage: 'url("/image/media/home_bg_1.png")' }}>
         <div className="site-card-wrapper HighInfo_InfoGrid">
           <Row gutter={[32, 32]}>
             <Col span={8} className="news-list">

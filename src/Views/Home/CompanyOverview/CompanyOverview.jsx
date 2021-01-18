@@ -61,7 +61,7 @@ export default function CompanyOverview() {
     })
   }
   return (
-    <section className="CompanyOverview">
+    <section className="CompanyOverview" style={{ backgroundImage: 'url("./image/media/home_bg_6.png")' }}>
       <div className="CompanyOverview_Grid">
         <div className="Grid-Title pv-title">
           <h1>Tổng quan PPV</h1>
