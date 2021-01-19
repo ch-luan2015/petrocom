@@ -1,21 +1,21 @@
 import React from "react";
 import { Row, Col } from 'antd';
-import './PortalContent.scss'
+import styles from './PortalContent.module.scss'
 
 export default function PortalContent() {
   return (
-    <section className="Portal-main">
+    <section className={styles.Portal_main}>
 
-      <Row gutter={[8, 8]} className="PC-Left">
+      <Row gutter={[8, 8]} className={styles.PC_Left}>
 
-        <Col span={16} className="PC-Title1">
+        <Col span={16} className={styles.PC_Title1} xs={24} sm={24} md={24} lg={14} xl={16}>
           <a href="/tintuc-sukien.html">Tin tức</a>
         </Col>
-        <Col span={8} className="PC-Title2">
+        <Col span={8} className={styles.PC_Title2}>
           <a href="/tintuc-sukien.html">Video</a>
         </Col>
 
-        <Col span={8} className="content-1">
+        <Col span={8} className={styles.content_1}>
           <figure>
             <a href="/nd/tin-chuyen-nganh/tu-hao-tien-xa-cung-viet-nam.html">
               <img
@@ -45,7 +45,7 @@ export default function PortalContent() {
           </figure>
 
         </Col>
-        <Col span={8} className="content-1">
+        <Col span={8} className={styles.content_1}>
           <figure>
             <a href="/nd/tin-chuyen-nganh/tu-hao-tien-xa-cung-viet-nam.html">
               <img
@@ -75,7 +75,7 @@ export default function PortalContent() {
 
 
 
-        <Col span={8} className="Information__Video">
+        <Col span={8} className={styles.Information__Video}>
           <figure>
             <iframe loading="lazy" title="Forge Lubricant - TechKool" width={1020} height={574} src="https://www.youtube.com/embed/s_AXbAaTT1o?feature=oembed" frameBorder={0} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.youtube.com/embed/s_AXbAaTT1o?feature=oembed" __idm_frm__={1897} className="lazyloaded" data-was-processed="true" />
             <figcaption>Đồng hành cùng Hải Phát</figcaption>

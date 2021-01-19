@@ -1,9 +1,9 @@
-.Portal-main {
+.Portal_main {
     max-width: 1280px;
     margin: 0 auto 3rem;
 
-    .PC-Left {
-        .PC-Title1 {
+    .PC_Left {
+        .PC_Title1 {
             width: 100%;
             text-align: left;
             position: relative;
@@ -25,7 +25,7 @@
                 border-bottom: 3px solid #f7a360;
             }
         }
-        .PC-Title2 {
+        .PC_Title2 {
             width: 100%;
             text-align: left;
             position: relative;
@@ -47,7 +47,7 @@
                 border-bottom: 3px solid #f7a360;
             }
         }
-        .content-1 {
+        .content_1 {
             figure {
                 display: flex;
                 flex-direction: row;
@@ -89,6 +89,51 @@
                 font-size: 1.125rem;
                 font-weight: 500;
             }
+        }
+    }
+}
+
+@media (min-width: 424px) {
+    & {
+        h1 {
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        p {
+            text-align: justify;
+            font-size: 1rem;
+            box-sizing: border-box;
+            margin-bottom: 1rem;
+        }
+    }
+}
+@media (min-width: 767px) {
+    & {
+        h1 {
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+        p {
+            text-align: justify;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
+@media (min-width: 1023px) {
+    & {
+        padding: 1rem;
+
+        h1 {
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+        p {
+            text-align: justify;
+            font-size: 1rem;
+            margin-bottom: 1rem;
         }
     }
 }
