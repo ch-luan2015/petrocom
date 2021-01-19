@@ -61,7 +61,7 @@ const Home = () => {
   return (
     <>
       <HeaderHome />
-      <CarouselHome arrayImage={imgCarousel} settings={settingsBanner} widthSlide={{ maxWidth: "1280px" }} />
+      <CarouselHome arrayImage={imgCarousel} settings={settingsBanner} widthSlide={{ width: "1280px" }} />
       <CompanyInfo />
       <PortalContent />
       <DistributionSystem />

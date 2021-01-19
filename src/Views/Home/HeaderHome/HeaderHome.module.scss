@@ -2,7 +2,7 @@
 
 .HeaderHome {
     background-color: $white;
-    margin: 0 auto;
+    margin: 3rem auto 0;
     width: 100%;
     padding: 1rem 0;
     border-bottom: 2px solid #f0f0f0;
@@ -89,7 +89,7 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
     .HeaderHome_Container {
         display: flex;
         flex-flow: row wrap;

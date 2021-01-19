@@ -15,14 +15,15 @@
         }
         p {
             text-align: left;
-            font-size: 1.125rem;
+            font-size: 1.1rem;
             box-sizing: border-box;
             margin-bottom: 1.2rem;
             line-height: 1.6;
             font-family: "Encode Sans", sans-serif;
             font-weight: 500;
+            color: $black;
         }
-        @media (min-width: 424px) {
+        @media (max-width: 424px) {
             & {
                 h1 {
                     text-align: center;
@@ -30,13 +31,13 @@
                 }
                 p {
                     text-align: justify;
-                    font-size: 1rem;
-                    box-sizing: border-box;
+                    font-size: 0.8rem;
                     margin-bottom: 1rem;
+                    color: $black;
                 }
             }
         }
-        @media (min-width: 767px) {
+        @media (max-width: 767px) {
             & {
                 padding: 1rem;
 
@@ -47,12 +48,13 @@
                 }
                 p {
                     text-align: justify;
-                    font-size: 1rem;
+                    font-size: 0.8rem;
                     margin-bottom: 1rem;
+                    color: $black;
                 }
             }
         }
-        @media (min-width: 1023px) {
+        @media (max-width: 1023px) {
             & {
                 padding: 1rem;
 
@@ -63,8 +65,9 @@
                 }
                 p {
                     text-align: justify;
-                    font-size: 1rem;
+                    font-size: 0.8rem;
                     margin-bottom: 1rem;
+                    color: $black;
                 }
             }
         }

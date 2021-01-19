@@ -16,7 +16,7 @@ const CarouselHome = ({ arrayImage, settings, style, widthSlide }) => {
   }
 
   return (
-    <Slider {...settings} style={{ width: widthSlide.width, margin: "0 auto", borderRadius: "8px" }} >
+    <Slider {...settings} style={{ maxWidth: widthSlide.width, margin: "0 auto", borderRadius: "8px" }} >
       {renderCarousel()}
     </Slider>
   );
