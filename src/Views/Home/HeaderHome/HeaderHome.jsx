@@ -1,15 +1,21 @@
 import React, { useState } from 'react';
-import "./HeaderHome.scss"
 import { Menu } from 'antd';
-import { MailOutlined } from '@ant-design/icons';
-
+import { HomeTwoTone } from '@ant-design/icons';
+import styles from "./HeaderHome.module.scss"
 
 var menuItem = [
-  { key: 1, name: 'Giới thiệu', url: '#', icon: <MailOutlined /> },
+  { key: 1, name: 'Giới thiệu', url: '#', icon: < HomeTwoTone /> },
   { key: 2, name: 'Lĩnh vực hoạt động', url: '#', icon: null },
   { key: 3, name: 'Mạng lưới', url: '#', icon: null },
   { key: 4, name: "Truyền thông", url: '#', icon: null },
 ]
+
+
+const centerStyle = {
+  position: 'relative',
+  display: 'flex',
+  justifyContent: 'center',
+}
 const HeaderHome = () => {
 
   const [current, setCurrent] = useState(0)
@@ -29,14 +35,17 @@ const HeaderHome = () => {
   }
 
   return (
-    <section className="HeaderHome">
-      <div className="HeaderHome-Container">
-        <div className="HeaderHome-Logo" >
+    <section className={styles.HeaderHome}>
+      <div className={styles.HeaderHome_Container}>
+        <div className={styles.HeaderHome_Logo} >
           <img src="/image/media/logo/logo_v2_vie.png" />
         </div>
-        <Menu className="HeaderHome-Menu" theme="light" mode="horizontal" selectedKeys={[current]} onClick={handleClick} >
+
+        <Menu className={styles.HeaderHome_Menu} theme="light" mode="horizontal" selectedKeys={[current]} onClick={handleClick} style={centerStyle} >
           {renderMenu(menuItem)}
         </Menu>
+
+
       </div>
 
     </section>
