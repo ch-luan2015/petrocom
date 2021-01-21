@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { Menu } from 'antd';
 import { HomeTwoTone } from '@ant-design/icons';
+import classNames from "classnames";
+import PropTypes from 'prop-types';
+
+import styles from './styles.module.scss'
 
 var menuItem = [
   { key: 1, name: 'Giới thiệu', url: '#', icon: < HomeTwoTone /> },
@@ -8,7 +12,6 @@ var menuItem = [
   { key: 3, name: 'Mạng lưới', url: '#', icon: null },
   { key: 4, name: "Truyền thông", url: '#', icon: null },
 ]
-import styles from "./styles.module.scss"
 
 
 const centerStyle = {
@@ -16,7 +19,7 @@ const centerStyle = {
   display: 'flex',
   justifyContent: 'center',
 }
-const HeaderFull = () => {
+const HeaderFull = (props) => {
 
   const [current, setCurrent] = useState(0)
 
@@ -35,7 +38,7 @@ const HeaderFull = () => {
   }
 
   return (
-    <section className={styles.HeaderHome}>
+    <section className={classNames(styles.HeaderHome, props.className)}>
       <div className={styles.HeaderHome_Container}>
         <div className={styles.HeaderHome_Logo} >
           <img src="/image/media/logo/logo_v2_vie.png" />
@@ -52,4 +55,9 @@ const HeaderFull = () => {
   );
 };
 
+
+HeaderFull.propTypes = {
+  className: PropTypes.any,
+
+};
 export default HeaderFull;
