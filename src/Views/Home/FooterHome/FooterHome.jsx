@@ -33,8 +33,8 @@ const FooterHome = () => {
         </div>
       </div>
       <div className={styles.footer_bottom}>
-        <Row gutter={[12, 12]} className={styles.footer_bottom__container}>
-          <Col span={8}>
+        <Row gutter={[24, 16]} className={styles.footer_bottom__container}>
+          <Col xs={24} sm={24} md={12} lg={8} xl={8}>
             <List
               header={<div className={styles.headerList}>More About Us</div>}
               bordered={false}
@@ -46,19 +46,19 @@ const FooterHome = () => {
               )}
             />
           </Col>
-          <Col span={8}>
+          <Col xs={24} sm={24} md={12} lg={8} xl={8}>
             <List
               header={<div className={styles.headerList}>Site info</div>}
               bordered={false}
               dataSource={data2}
               renderItem={item => (
-                <List.Item>
+                <List.Item >
                   <a href="#" className={styles.itemList}>{item}</a>
                 </List.Item>
               )}
             />
           </Col>
-          <Col span={8}>
+          <Col xs={0} sm={0} md={0} lg={8} xl={8}>
             <div className={styles.footer_bottom__copyright}>
               <p className={styles.copyrightText}>© <a href="/">OilPrice.com</a><a href="https://plus.google.com/100818571694606454377/posts" rel="external nofollow">Google+</a></p>
               <p className="smallprint">The materials provided on this Web site are for informational and educational purposes only and are not intended to provide tax, legal, or investment advice.</p>
