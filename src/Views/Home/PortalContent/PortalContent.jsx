@@ -2,7 +2,6 @@ import React from "react";
 import { Row, Col } from 'antd';
 import styles from './PortalContent.module.scss'
 
-// xs={24} sm={24} md={24} lg={14} xl={16}
 export default function PortalContent() {
   return (
     <section className={styles.Portal_main}>

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Menu } from 'antd';
 import { HomeTwoTone } from '@ant-design/icons';
-import styles from "./HeaderHome.module.scss"
 
 var menuItem = [
   { key: 1, name: 'Giới thiệu', url: '#', icon: < HomeTwoTone /> },
@@ -9,6 +8,7 @@ var menuItem = [
   { key: 3, name: 'Mạng lưới', url: '#', icon: null },
   { key: 4, name: "Truyền thông", url: '#', icon: null },
 ]
+import styles from "./styles.module.scss"
 
 
 const centerStyle = {
@@ -16,7 +16,7 @@ const centerStyle = {
   display: 'flex',
   justifyContent: 'center',
 }
-const HeaderHome = () => {
+const HeaderFull = () => {
 
   const [current, setCurrent] = useState(0)
 
@@ -52,4 +52,4 @@ const HeaderHome = () => {
   );
 };
 
-export default HeaderHome;
+export default HeaderFull;

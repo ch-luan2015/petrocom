@@ -1,6 +1,5 @@
 import React from 'react';
-import styles from "./Home.module.scss"
-import HeaderHome from "./HeaderHome/HeaderHome"
+import HeaderHome from "./HeaderHome"
 import CarouselHome from './CarouselHome/CarouselHome';
 import CompanyOverview from './CompanyOverview/CompanyOverview';
 import Customer from './Customer/Customer';
@@ -8,6 +7,7 @@ import CompanyInfo from './CompanyInfo/CompanyInfo';
 import PortalContent from './PortalContent/PortalContent'
 import DistributionSystem from './DistributionSystem/DistributionSystem'
 import FooterHome from './FooterHome/FooterHome';
+import styles from "./Home.module.scss"
 
 const imgCarousel = [
   { url: "/image/Banner/1banner.jpg" },

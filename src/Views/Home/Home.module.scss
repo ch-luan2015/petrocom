@@ -1,0 +1,4 @@
+@import "../../styles/core.scss";
+@include media(pc) {
+    width: $break-large;
+}

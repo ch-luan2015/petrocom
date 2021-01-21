@@ -32,6 +32,8 @@ $orange-under: #f7a360;
 $break-small: 700px !default;
 $break-large: 1012px !default;
 
+
+
 @mixin media($device) {
     @if $device == phone {
         @media only screen and (max-width: $break-small) {
