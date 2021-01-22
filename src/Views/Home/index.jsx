@@ -4,7 +4,7 @@ import CarouselHome from './CarouselHome/CarouselHome';
 import CompanyOverview from './CompanyOverview/CompanyOverview';
 import Customer from './Customer/Customer';
 import CompanyInfo from './CompanyInfo/CompanyInfo';
-import PortalContent from './PortalContent/PortalContent'
+import NewsDaily from './NewsDaily/NewsDaily'
 import DistributionSystem from './DistributionSystem/DistributionSystem'
 import FooterHome from './FooterHome/FooterHome';
 import styles from "./Home.module.scss"
@@ -63,7 +63,7 @@ const Home = () => {
       <HeaderHome />
       <CarouselHome arrayImage={imgCarousel} settings={settingsBanner} widthSlide={{ width: "1280px" }} />
       <CompanyInfo />
-      <PortalContent />
+      <NewsDaily />
       <DistributionSystem />
       <CompanyOverview />
       <Customer />

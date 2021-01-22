@@ -6,28 +6,41 @@
     background-size: cover;
     width: 100%;
     .CompanyOverview_Grid {
-        padding: 3rem 0;
+        padding: 0;
         margin: 0 auto;
         max-width: 1280px;
-        .btn_ViewMore {
-            margin: 2rem 0 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-        }
+
         .pv_title {
-            margin-bottom: 3rem;
-            h1 {
+            width: 100%;
+            text-align: center;
+            margin: 2rem auto;
+            p {
                 font-family: "Encode Sans";
                 color: #48626f;
-                text-align: center;
                 font-size: 2.5rem;
                 font-weight: 700;
+                text-align: center;
+            }
+            @include media(phone) {
+                margin: 1rem;
+                font-size: 2rem;
+                font-weight: 700;
+                text-align: center;
+            }
+            @include media(tablet) {
+                margin: 1rem;
+                font-size: 2rem;
+                font-weight: 700;
+                text-align: center;
             }
         }
+
         .CompanyOverview_Grid__Content {
-            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            padding: 0 !important;
             .ViewItem {
                 text-align: center;
                 .ViewItem_Logo {
@@ -38,6 +51,7 @@
                 }
                 .ViewItem_Caption {
                     margin: 1rem 0;
+                    text-align: center;
                     .ViewItem_Caption__Title {
                         font-size: 1.4rem;
                         font-weight: 700;
@@ -49,9 +63,18 @@
                         font-weight: 400;
                         text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
                         margin-bottom: 0;
+                        text-align: center;
                     }
                 }
             }
+        }
+
+        .btn_ViewMore {
+            margin: 2rem 0 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
         }
     }
 }

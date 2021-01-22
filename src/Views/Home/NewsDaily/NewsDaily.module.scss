@@ -3,7 +3,7 @@
 .Portal_main {
     max-width: 1280px;
     margin: 0 auto 3rem;
-
+    padding: 1rem;
     .PC_Left {
         .PC_Title1 {
             width: 100%;
@@ -83,6 +83,7 @@
     }
     .Information__Video {
         width: 100%;
+        padding: 0 1rem;
         figure {
             iframe {
                 padding-top: 1rem;

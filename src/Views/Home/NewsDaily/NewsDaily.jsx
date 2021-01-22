@@ -1,20 +1,19 @@
 import React from "react";
 import { Row, Col } from 'antd';
-import styles from './PortalContent.module.scss'
+import styles from './NewsDaily.module.scss'
 
-export default function PortalContent() {
+export default function NewsDaily() {
   return (
     <section className={styles.Portal_main}>
 
-      <Row gutter={[12, 12]} className={styles.PC_Left}>
+      <Row gutter={[16, 16]} className={styles.PC_Left}>
 
         <Col xs={24} sm={24} md={24} lg={16} xl={16} >
           <Row className={styles.PC_Title1}>
             <a href="/tintuc-sukien.html">Tin tức</a>
           </Row>
-          <Row>
-
-            <Col span={12} className={styles.content_1}>
+          <Row className="caption_news">
+            <Col md={12} className={styles.content_1}>
               <figure>
                 <a href="/nd/tin-chuyen-nganh/tu-hao-tien-xa-cung-viet-nam.html">
                   <img
@@ -41,7 +40,7 @@ export default function PortalContent() {
               </figure>
             </Col>
 
-            <Col span={12} className={styles.content_1}>
+            <Col md={12} className={styles.content_1}>
               <figure>
                 <a href="/nd/tin-chuyen-nganh/tu-hao-tien-xa-cung-viet-nam.html">
                   <img
@@ -87,33 +86,6 @@ export default function PortalContent() {
         </Col>
 
       </Row>
-
-
-
-      {/* <div className="col-md-6 col-sm-6 cms-sub-item-1">
-            <ul>
-              <li>
-                <a
-                  href="/nd/hoat-dong-van-hoa-xa-hoi/petrolimex-to-chuc-chuong-trinh-ky-niem-65-nam-thanh-lap-12-01-1956-12-01-2021-65-nam-mot-dong-chay.html"
-                  data-id="2BBED112159E4383AA95BC9D1953B2E4"
-                  className="vie-tooltip"
-                >
-                  65 năm một dòng chảy&nbsp;(15/01/2021)
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/nd/tin-chuyen-nganh/tin-anh-petrolimex-plx-tong-ket-2020-trien-khai-nhiem-vu-2021.html"
-                  data-id="350EC12DB5054C1DA4EF09F944EDA328"
-                  className="vie-tooltip"
-                >
-                  Petrolimex/PLX tổng kết 2020 &amp; triển khai nhiệm vụ
-                  2021&nbsp;(15/01/2021)
-                </a>
-              </li>
-            </ul>
-          </div> */}
-
 
     </section >
   );

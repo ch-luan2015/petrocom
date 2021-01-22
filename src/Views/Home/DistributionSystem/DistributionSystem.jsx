@@ -26,6 +26,47 @@ function DistributionSystem() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          className: "center",
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          centerMode: true,
+          infinite: true,
+          centerPadding: "0px",
+        }
+      },
+      {
+        breakpoint: 426,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerPadding: "0px"
+        }
+      },
+      {
+        breakpoint: 376,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerPadding: "0px",
+          centerMode: true,
+          infinite: true,
+          className: "center",
+        }
+      }
+    ]
   };
   const renderCarousel = () => {
     return disSystem.map((item) => {
