@@ -61,7 +61,7 @@ var settingsBanner = {
 const Home = () => {
 
   return (
-    <>
+    <div className={styles.home}>
       <HeaderHome />
       <CarouselHome arrayImage={imgCarousel} settings={settingsBanner} widthSlide={{ width: "1280px" }} />
       <CompanyInfo />
@@ -70,7 +70,7 @@ const Home = () => {
       <CompanyOverview />
       <Customer />
       <FooterHome />
-    </>
+    </div>
   );
 };
 
