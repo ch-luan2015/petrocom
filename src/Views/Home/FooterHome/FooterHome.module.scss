@@ -1,9 +1,7 @@
 @import "../../../styles/core.scss";
 
 .footer_main {
-    margin-bottom: 3rem;
     background: $light-gray5;
-
     .footer_top {
         max-width: 1280px;
         margin: 0 auto;
@@ -12,8 +10,6 @@
         .footer_top__logo {
             padding: 0.5rem;
             border-bottom: 2px solid $orange-under;
-        }
-        .footer_top__social {
         }
 
         @include media(tablet) {
@@ -49,8 +45,6 @@
                     color: $dark-gray5;
                 }
             }
-
-            margin-bottom: 3rem;
 
             @include media(tablet) {
                 padding: 0 2rem;

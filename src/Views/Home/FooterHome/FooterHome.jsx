@@ -21,19 +21,16 @@ const data2 = [
 
 const FooterHome = () => {
   return (
-    <footer className={styles.footer_main}>
+    <div className={styles.footer_main}>
       <div className={styles.footer_top}>
         <div className={styles.footer_top__logo}>
           <img src="https://d1o9e4un86hhpc.cloudfront.net/a/img/oilprice-logo-footer.png" alt="Oilprice - The No. 1 Source for Oil &amp; Energy News" title="Oilprice - The No. 1 Source for Oil &amp; Energy News" />
 
         </div>
-        <div className={styles.footer_top__social}>
 
-
-        </div>
       </div>
       <div className={styles.footer_bottom}>
-        <Row gutter={[24, 16]} className={styles.footer_bottom__container}>
+        <Row gutter={[24]} className={styles.footer_bottom__container}>
           <Col xs={24} sm={24} md={12} lg={8} xl={8}>
             <List
               header={<div className={styles.headerList}>More About Us</div>}
@@ -70,7 +67,7 @@ const FooterHome = () => {
           </Col>
         </Row>
       </div>
-    </footer>
+    </div>
   )
 }
 
