@@ -3,8 +3,8 @@
 .Portal_main {
     max-width: 1280px;
     margin: 0 auto 3rem;
-    padding: 1rem;
     .PC_Left {
+        padding-left: 0.5rem;
         .PC_Title1 {
             width: 100%;
             text-align: left;
@@ -23,7 +23,7 @@
                 left: 0;
                 bottom: 0;
                 height: 1px;
-                width: 98%;
+                width: 100%;
                 border-bottom: 3px solid #f7a360;
             }
         }
@@ -74,7 +74,6 @@
                 caption {
                     text-align: left;
                     font-size: 1rem;
-                    padding: 0 1rem;
                     color: $black;
                     font-weight: 500;
                 }
@@ -83,7 +82,7 @@
     }
     .Information__Video {
         width: 100%;
-        padding: 0 1rem;
+        padding-right: 0.5rem;
         figure {
             iframe {
                 padding-top: 1rem;
@@ -92,7 +91,7 @@
             }
             figcaption {
                 font-size: 1.125rem;
-                font-weight: 500;
+                font-weight: 600;
                 text-align: center;
             }
         }
