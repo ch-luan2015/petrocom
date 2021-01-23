@@ -26,6 +26,7 @@ var settingsBrand = {
   autoplaySpeed: 2000,
   centerMode: true,
   variableWidth: true,
+  arrows: false,
   responsive: [
     {
       breakpoint: 1024,
