@@ -7,6 +7,10 @@ import CompanyInfo from './CompanyInfo/CompanyInfo';
 import NewsDaily from './NewsDaily/NewsDaily'
 import DistributionSystem from './DistributionSystem/DistributionSystem'
 import FooterHome from './FooterHome/FooterHome';
+import { BackTop } from 'antd';
+import { CaretUpFilled } from '@ant-design/icons';
+
+
 import styles from "./Home.module.scss"
 
 const imgCarousel = [
@@ -57,7 +61,6 @@ var settingsBanner = {
 
 
 
-
 const Home = () => {
 
   return (
@@ -69,9 +72,12 @@ const Home = () => {
       <DistributionSystem />
       <CompanyOverview />
       <Customer />
+      <BackTop />
       <FooterHome />
+      <BackTop>
+        <div className={styles.backTop}><CaretUpFilled /></div>
+      </BackTop>
     </div>
   );
 };
-
 export default Home;
