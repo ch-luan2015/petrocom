@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Menu } from 'antd';
 import { HomeTwoTone } from '@ant-design/icons';
 import classNames from "classnames";
 import PropTypes from 'prop-types';
 import styles from './styles.module.scss';
-
-
 
 
 var menuItem = [
@@ -53,7 +51,6 @@ const HeaderFull = (props) => {
         <Menu className={styles.HeaderHome_Menu} theme="light" mode="horizontal" selectedKeys={[current]} onClick={handleClick} style={centerStyle} >
           {renderMenu(menuItem)}
         </Menu>
-
 
       </div>
 
