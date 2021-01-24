@@ -60,7 +60,7 @@ function CompanyOverview() {
 
 
   return (
-    <section className={styles.CompanyOverview} style={{ backgroundImage: 'url("./image/media/home_bg_6.png")' }}>
+    <section id="companyOverview" className={styles.CompanyOverview} style={{ backgroundImage: 'url("./image/media/home_bg_6.png")' }} >
       <Row span={24} className={styles.CompanyOverview_Grid}>
 
         <div className={styles.pv_title}>

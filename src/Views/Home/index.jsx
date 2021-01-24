@@ -1,4 +1,5 @@
 import React from 'react';
+
 import HeaderHome from "./HeaderHome"
 import CarouselHome from './CarouselHome/CarouselHome';
 import CompanyOverview from './CompanyOverview/CompanyOverview';
@@ -10,7 +11,6 @@ import FooterHome from './FooterHome/FooterHome';
 import { BackTop } from 'antd';
 import { CaretUpFilled } from '@ant-design/icons';
 
-
 import styles from "./Home.module.scss"
 
 const imgCarousel = [
@@ -20,6 +20,7 @@ const imgCarousel = [
   { url: "/image/Banner/banner01.jpg" },
   { url: "/image/Banner/banner02.jpg" },
 ]
+
 var settingsBanner = {
   dots: false,
   infinite: true,
@@ -72,7 +73,6 @@ const Home = () => {
       <DistributionSystem />
       <CompanyOverview />
       <Customer />
-      <BackTop />
       <FooterHome />
       <BackTop>
         <div className={styles.backTop}><CaretUpFilled /></div>

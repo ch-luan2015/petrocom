@@ -8,12 +8,16 @@ import { HomeTwoTone, MenuOutlined, DoubleLeftOutlined } from '@ant-design/icons
 import PropTypes from 'prop-types';
 import styles from "./styles.module.scss";
 
-const menuItem = [
-  { key: 1, name: 'Giới thiệu', url: '#', icon: < HomeTwoTone /> },
-  { key: 2, name: 'Lĩnh vực hoạt động', url: '#', icon: null },
-  { key: 3, name: 'Mạng lưới', url: '#', icon: null },
-  { key: 4, name: "Truyền thông", url: '#', icon: null },
+var menuItem = [
+  { key: 1, name: 'Giới thiệu', url: '#companyInfo', icon: < HomeTwoTone style={{ fontSize: '1.3rem', }} /> },
+  { key: 2, name: 'Tin tức', url: '#newsDaily', icon: null, id: "#" },
+  { key: 3, name: 'Hệ thống phân phối', url: '#distributionSystem', icon: null },
+  { key: 4, name: "Tổng quan", url: '#companyOverview', icon: null },
+  { key: 5, name: "Khách hàng", url: '#customer', icon: null },
+  { key: 6, name: "Liên hệ", url: '#footerHome', icon: null },
 ]
+
+
 const HeaderMobile = (props) => {
 
   const [visible, setVisible] = useState(false)
@@ -32,9 +36,9 @@ const HeaderMobile = (props) => {
       return <Menu.Item key={item.key} style={{
         fontSize: "1rem", fontWeight: "500",
       }} icon={item.icon}>
-        < a href={item.href} target="_blank" rel="noopener noreferrer" >
+        <a href={item.url} rel="noopener noreferrer">
           {item.name}
-        </a >
+        </a>
       </Menu.Item >
     })
   }

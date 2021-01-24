@@ -55,7 +55,7 @@ export default function CompanyInfo() {
     },
   ];
   return (
-    <section className={styles.Information}>
+    <section className={styles.Information} id="companyInfo">
       <Row style={{ margin: "0 auto" }}>
         <Col xs={24} sm={24} md={24} lg={14} xl={16} className={styles.Information_Left}>
           <h1>Công Ty Cổ Phần Thương Mại Dịch Vụ Dầu Khí Hải Phát</h1>

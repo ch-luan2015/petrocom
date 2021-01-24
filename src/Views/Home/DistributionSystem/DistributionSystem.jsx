@@ -83,14 +83,14 @@ function DistributionSystem() {
     })
   }
   return (
-    <>
+    <div id="distributionSystem">
       <div className="PC-Title">
         <a href="/tintuc-sukien.html">Hệ Thống</a>
       </div>
       <Slider {...settingsDisSystem} style={{ margin: "0 auto", borderRadius: "8px" }} className="disCarousel">
         {renderCarousel()}
       </Slider>
-    </>
+    </div>
   )
 }
 

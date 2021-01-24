@@ -4,7 +4,7 @@ import styles from './NewsDaily.module.scss'
 
 export default function NewsDaily() {
   return (
-    <section className={styles.Portal_main}>
+    <section className={styles.Portal_main} id="newsDaily">
 
       <Row gutter={[16, 16]} className={styles.PC_Left}>
 

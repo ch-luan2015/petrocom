@@ -21,7 +21,7 @@ const data2 = [
 
 const FooterHome = () => {
   return (
-    <div className={styles.footer_main}>
+    <div className={styles.footer_main} id="footerHome">
       <div className={styles.footer_top}>
         <div className={styles.footer_top__logo}>
           <img src="https://d1o9e4un86hhpc.cloudfront.net/a/img/oilprice-logo-footer.png" alt="Oilprice - The No. 1 Source for Oil &amp; Energy News" title="Oilprice - The No. 1 Source for Oil &amp; Energy News" />

@@ -56,7 +56,7 @@ var settingsBrand = {
 };
 export default function Customer() {
   return (
-    <section className={styles.customer}>
+    <section className={styles.customer} id="customer">
       <div className={styles.customer_container}>
         <div className={styles.customer_container__Title}>
           <h2>KHÁCH HÀNG THÂN THIẾT</h2>
