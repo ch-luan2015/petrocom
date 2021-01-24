@@ -66,8 +66,11 @@ const Home = () => {
 
   return (
     <div className={styles.home}>
+
       <HeaderHome />
-      <CarouselHome arrayImage={imgCarousel} settings={settingsBanner} widthSlide={{ width: "1280px" }} />
+      <div className={styles.resCarousel}>
+        <CarouselHome arrayImage={imgCarousel} settings={settingsBanner} widthSlide={{ width: "1280px" }} />
+      </div>
       <CompanyInfo />
       <NewsDaily />
       <DistributionSystem />
@@ -77,6 +80,7 @@ const Home = () => {
       <BackTop>
         <div className={styles.backTop}><CaretUpFilled /></div>
       </BackTop>
+
     </div>
   );
 };

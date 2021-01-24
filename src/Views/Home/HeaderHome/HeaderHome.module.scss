@@ -14,3 +14,12 @@
         display: none !important;
     }
 }
+
+.stickyTop {
+    position: -webkit-sticky;
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}

@@ -16,4 +16,12 @@
         font-size: 1.2rem;
         font-weight: 600;
     }
+    .resCarousel {
+        margin-top: 12rem;
+        width: 100%;
+        @include media(phone) {
+            margin-top: 4rem;
+            width: 100%;
+        }
+    }
 }
