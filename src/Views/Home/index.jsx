@@ -11,7 +11,7 @@ import FooterHome from './FooterHome/FooterHome';
 import { BackTop } from 'antd';
 import { CaretUpFilled } from '@ant-design/icons';
 
-import styles from "./Home.module.scss"
+import styles from "./HomePage.module.scss"
 
 const imgCarousel = [
   { url: "/image/Banner/1banner.jpg" },

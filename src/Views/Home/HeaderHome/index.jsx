@@ -6,10 +6,12 @@ import styles from "./HeaderHome.module.scss";
 
 function HeaderHome() {
   return (
+
     <div className={styles.stickyTop}>
       <Full className={styles.full} />
       <Mobile className={styles.mobile} />
     </div>
+
   );
 }
 
