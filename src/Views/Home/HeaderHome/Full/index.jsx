@@ -42,7 +42,7 @@ const HeaderFull = (props) => {
   }
 
   return (
-    <section className={classNames(styles.HeaderHome, props.className)}>
+    <div className={classNames(styles.HeaderHome, props.className)}>
       <div className={styles.HeaderHome_Container}>
         <div className={styles.HeaderHome_Logo} >
           <img src="/image/media/logo/logo_v2_vie.png" />
@@ -54,7 +54,7 @@ const HeaderFull = (props) => {
 
       </div>
 
-    </section>
+    </div>
   );
 };
 

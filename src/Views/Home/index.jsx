@@ -68,7 +68,9 @@ const Home = () => {
     <div className={styles.home}>
 
       <HeaderHome />
-      <CarouselHome arrayImage={imgCarousel} settings={settingsBanner} widthSlide={{ width: "1280px" }} />
+      <div className={styles.topCarousel}>
+        <CarouselHome arrayImage={imgCarousel} settings={settingsBanner} widthSlide={{ width: "1280px" }} />
+      </div>
       <CompanyInfo />
       <NewsDaily />
       <DistributionSystem />

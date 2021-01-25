@@ -1,8 +1,7 @@
 import React from 'react';
-import "./CarouselHome.scss"
 import Slider from "react-slick";
 import PropTypes from 'prop-types';
-
+import "./CarouselHome.scss"
 
 
 const CarouselHome = ({ arrayImage, settings, style, widthSlide }) => {
@@ -19,6 +18,7 @@ const CarouselHome = ({ arrayImage, settings, style, widthSlide }) => {
     <Slider {...settings} style={{ maxWidth: widthSlide.width, margin: "0 auto", borderRadius: "8px" }} >
       {renderCarousel()}
     </Slider>
+
   );
 };
 

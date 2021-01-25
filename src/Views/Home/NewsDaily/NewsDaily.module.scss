@@ -142,3 +142,15 @@
         }
     }
 }
+
+
+.topDaily {
+    &::before {
+        display: block;
+        content: " ";
+        margin-top: -13rem;
+        height: 13rem;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}

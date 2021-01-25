@@ -1,4 +1,4 @@
-.PC-Title {
+.PC_Title {
     max-width: 1280px;
     min-width: 375px;
     text-align: center;
@@ -37,7 +37,7 @@
         border-radius: 8px;
     }
 
-    .disCarousel-caption {
+    .disCarousel_caption {
         text-align: left;
         margin: 1rem 0;
 
@@ -54,5 +54,16 @@
             font-family: "Encode Sans", sans-serif;
             font-weight: 500;
         }
+    }
+}
+
+.topDisSystem {
+    &::before {
+        display: block;
+        content: " ";
+        margin-top: -12rem;
+        height: 12rem;
+        visibility: hidden;
+        pointer-events: none;
     }
 }

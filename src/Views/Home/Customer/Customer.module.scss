@@ -39,3 +39,14 @@
         }
     }
 }
+
+.topCustomer {
+    &::before {
+        display: block;
+        content: " ";
+        margin-top: -12rem;
+        height: 12rem;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}

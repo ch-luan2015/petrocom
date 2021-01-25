@@ -111,3 +111,14 @@
         font-weight: 500;
     }
 }
+
+.topCompanyInfo {
+    &::before {
+        display: block;
+        content: " ";
+        margin-top: -12rem;
+        height: 12rem;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}

@@ -1,7 +1,6 @@
 import React from 'react'
 import Slider from "react-slick";
-import PropTypes from 'prop-types';
-import "./DistributionSystem.scss";
+import styles from "./DistributionSystem.module.scss";
 import { EnvironmentTwoTone, PhoneTwoTone, HomeTwoTone, ShopTwoTone, HomeFilled } from '@ant-design/icons'
 
 
@@ -74,7 +73,7 @@ function DistributionSystem() {
     return disSystem.map((item) => {
       return <figure key={item.url} >
         <img src={`${item.url}`} style={{ objectFit: "fill", width: "100%", height: "200px", borderRadius: "8px" }} />
-        <figcaption className="disCarousel-caption">
+        <figcaption className={styles.disCarousel_caption}>
           <h3><ShopTwoTone twoToneColor="#52c41a" />{" "}{item.name}</h3>
           <p><EnvironmentTwoTone twoToneColor="#E0494C" />{" "}{item.address}</p>
           <p><PhoneTwoTone />{" "}{item.phone}</p>
@@ -83,23 +82,20 @@ function DistributionSystem() {
     })
   }
   return (
-    <div id="distributionSystem">
-      <div className="PC-Title">
+    <>
+      <div className={styles.topDisSystem} id="distributionSystem"></div>
+
+      <div className={styles.PC_Title}>
         <a href="/tintuc-sukien.html">Hệ Thống</a>
       </div>
-      <Slider {...settingsDisSystem} style={{ margin: "0 auto", borderRadius: "8px" }} className="disCarousel">
+      <Slider {...settingsDisSystem} style={{ margin: "0 auto", borderRadius: "8px" }} className={styles.disCarousel}>
         {renderCarousel()}
       </Slider>
-    </div>
+
+    </>
   )
 }
 
 
-// DistributionSystem.propTypes = {
-//   arrayImage: PropTypes.array,
-//   settings: PropTypes.data,
-//   style: PropTypes.object,
-//   widthSlide: PropTypes.object,
-// };
 
 export default DistributionSystem;

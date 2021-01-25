@@ -2,7 +2,6 @@
 
 .home {
     width: 100%;
-    position: relative;
     overflow: hidden;
 
     .backTop {
@@ -15,5 +14,14 @@
         text-align: center;
         font-size: 1.2rem;
         font-weight: 600;
+    }
+    .topCarousel {
+        margin-top: 14rem;
+        @include media(tablet) {
+            margin-top: 14rem;
+        }
+        @include media(phone) {
+            margin-top: 6rem;
+        }
     }
 }

@@ -60,26 +60,30 @@ function CompanyOverview() {
 
 
   return (
-    <section id="companyOverview" className={styles.CompanyOverview} style={{ backgroundImage: 'url("./image/media/home_bg_6.png")' }} >
-      <Row span={24} className={styles.CompanyOverview_Grid}>
+    <>
+      <div className={styles.topCompany} id="companyOverview"></div>
 
-        <div className={styles.pv_title}>
-          <p>Tổng quan PPV</p>
-        </div>
+      <section className={styles.CompanyOverview} style={{ backgroundImage: 'url("./image/media/home_bg_6.png")' }} >
+        <Row span={24} className={styles.CompanyOverview_Grid}>
 
-        <Row className={styles.CompanyOverview_Grid__Content}>
-          {renderItemView()}
+          <div className={styles.pv_title}>
+            <p>Tổng quan PPV</p>
+          </div>
+
+          <Row className={styles.CompanyOverview_Grid__Content}>
+            {renderItemView()}
+          </Row>
+
+
+          <Row span={24} className={styles.btn_ViewMore}>
+            <Button type="danger" shape="round" size="large" >
+              Xem Thêm <RightOutlined />
+            </Button>
+          </Row>
+
         </Row>
-
-
-        <Row span={24} className={styles.btn_ViewMore}>
-          <Button type="danger" shape="round" size="large" >
-            Xem Thêm <RightOutlined />
-          </Button>
-        </Row>
-
-      </Row>
-    </section>
+      </section>
+    </>
   )
 }
 
