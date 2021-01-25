@@ -2,6 +2,8 @@ import React from 'react'
 import CarouselHome from '../CarouselHome/CarouselHome'
 import styles from './Customer.module.scss'
 
+
+
 const imgBrand = [
   { url: "/image/Brand/1.jpg" },
   { url: "/image/Brand/2.jpg" },
@@ -55,18 +57,22 @@ var settingsBrand = {
   ]
 };
 export default function Customer() {
+
+
   return (
     <section className={styles.customer} id="customer">
       <div className={styles.customer_container}>
         <div className={styles.customer_container__Title}>
           <h2>KHÁCH HÀNG THÂN THIẾT</h2>
           <p>Trên chặng đường phát triển của doanh nghiệp, một đối tác thích hợp là tài sản quý giá.
-          PPV rất vinh hạnh khi được nhiều khách hàng tin tưởng chọn lựa và gắn bó lâu dài.</p>
+               PPV rất vinh hạnh khi được nhiều khách hàng tin tưởng chọn lựa và gắn bó lâu dài.</p>
         </div>
         <div className={styles.customer_container__partnerList}>
           <CarouselHome arrayImage={imgBrand} settings={settingsBrand} style={{ padding: "10px" }} widthSlide={{ width: "100%" }} />
         </div>
       </div>
     </section>
+
+
   )
 }
