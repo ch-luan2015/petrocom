@@ -9,7 +9,7 @@ export default function NewsDaily() {
 
       <section className={styles.Portal_main} >
 
-        <Row gutter={[16, 16]} className={styles.PC_Left}>
+        <Row gutter={[16, 0]} className={styles.PC_Left}>
 
           <Col xs={24} sm={24} md={24} lg={16} xl={16} >
             <Row className={styles.PC_Title1}>
