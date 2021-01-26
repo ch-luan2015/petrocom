@@ -10,6 +10,9 @@ const HomePage = lazy(() => import('./Views/Home'))
 const LoginPage = lazy(() => import('./Views/Login'))
 const AdminDashBoardPage = lazy(() => import('./Views/AdminDashBoard'))
 const UserManagePage = lazy(() => import('./Views/UserManagerPage'))
+const PdfView = lazy(() => import('./Views/PdfView'))
+
+
 
 const PageNotFound = () => (
   <Result
@@ -38,6 +41,8 @@ const Routers = () => (
     >
       <Switch>
         <Route exact path="/" component={HomePage} />
+        <Route exact path="/pdf" component={PdfView} />
+
         <AuthLogin path="/login">
           <LoginPage />
         </AuthLogin>
