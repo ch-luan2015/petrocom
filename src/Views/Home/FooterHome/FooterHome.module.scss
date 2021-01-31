@@ -26,12 +26,14 @@
         .footer_bottom__container {
             padding: 0 2rem;
             .headerList {
-                color: $orange-under;
+                color: $blue-ant;
                 font-size: 1.2rem;
                 font-weight: 600;
             }
             .itemList {
                 font-size: 1.1rem;
+                color: $dark-gray5;
+                text-decoration: none;
             }
             .footer_bottom__copyright {
                 padding: 0 1rem;

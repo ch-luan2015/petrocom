@@ -1,12 +1,15 @@
+@import "../../../styles/core.scss";
+
 .PC_Title {
     max-width: 1280px;
     min-width: 375px;
-    text-align: left;
+    text-align: center;
     position: relative;
     z-index: 1;
     margin: 0 auto;
     margin-bottom: 2rem;
     padding-left: 0.5em;
+    padding-bottom: 0.2rem;
     a {
         font-family: "Encode Sans";
         color: #48626f;
@@ -21,7 +24,14 @@
         bottom: 0;
         height: 1px;
         width: 100%;
-        border-bottom: 3px solid #f7a360;
+        border-bottom: 3px solid $blue-ant;
+    }
+
+    @include media(phone) {
+        text-align: left;
+    }
+    @include media(tablet) {
+        text-align: center;
     }
 }
 

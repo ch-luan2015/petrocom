@@ -51,7 +51,7 @@ const FooterHome = () => {
                 bordered={false}
                 dataSource={data2}
                 renderItem={item => (
-                  <List.Item >
+                  <List.Item style={{ color: "#514134" }}>
                     <a href="#" className={styles.itemList}>{item}</a>
                   </List.Item>
                 )}
@@ -62,8 +62,7 @@ const FooterHome = () => {
                 <p className={styles.copyrightText}>© <a href="/">OilPrice.com</a><a href="https://plus.google.com/100818571694606454377/posts" rel="external nofollow">Google+</a></p>
                 <p className="smallprint">The materials provided on this Web site are for informational and educational purposes only and are not intended to provide tax, legal, or investment advice.</p>
                 <p className="smallprint">Nothing contained on the Web site shall be considered a recommendation, solicitation, or offer to buy or sell a security to any person in any jurisdiction.</p>
-                <p className="smallprint">Trading and investing carries a high risk of losing money rapidly due to leverage. Individuals should consider whether they can afford the risks associated to trading.</p>
-                <p className="smallprint">Merchant of Record: A Media Solutions trading as Oilprice.com</p>
+
               </div>
 
             </Col>
