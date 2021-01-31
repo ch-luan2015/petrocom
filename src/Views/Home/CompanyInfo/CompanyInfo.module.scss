@@ -73,13 +73,12 @@
         }
     }
     .Information_Right {
-        padding-left: 1rem;
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         align-content: flex-start;
         align-items: center;
         .Information__OilPrice {
