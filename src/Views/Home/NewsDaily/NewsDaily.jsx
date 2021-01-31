@@ -29,7 +29,7 @@ export default function NewsDaily() {
                   <h3>
                     <a href="/nd/tin-chuyen-nganh/tu-hao-tien-xa-cung-viet-nam.html">
                       Petrolimex tự hào tiến xa cùng Việt Nam
-                  </a>
+                    </a>
                     <p>15/01/2021&nbsp;06:30 CH</p>
                   </h3>
 

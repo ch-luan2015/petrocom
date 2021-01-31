@@ -23,9 +23,13 @@
             }
             @include media(phone) {
                 margin: 1rem;
-                font-size: 2rem;
+                font-size: 1.7rem;
                 font-weight: 700;
                 text-align: center;
+                p {
+                    font-size: 1.7rem;
+                    font-weight: 700;
+                }
             }
             @include media(tablet) {
                 margin: 1rem;

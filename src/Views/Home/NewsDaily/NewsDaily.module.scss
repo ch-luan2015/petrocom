@@ -26,6 +26,15 @@
                 width: 100%;
                 border-bottom: 3px solid $blue-ant;
             }
+            @include media(phone) {
+                a {
+                    font-family: "Encode Sans";
+                    color: #48626f;
+                    text-align: center;
+                    font-size: 1.7rem;
+                    font-weight: 700;
+                }
+            }
         }
         .PC_Title2 {
             width: 100%;
@@ -47,6 +56,15 @@
                 height: 1px;
                 width: 100%;
                 border-bottom: 3px solid $blue-ant;
+            }
+            @include media(phone) {
+                a {
+                    font-family: "Encode Sans";
+                    color: #48626f;
+                    text-align: center;
+                    font-size: 1.7rem;
+                    font-weight: 700;
+                }
             }
         }
         .content_1 {
@@ -76,6 +94,9 @@
                     font-size: 1rem;
                     color: $black;
                     font-weight: 500;
+                    @include media(phone) {
+                        display: none;
+                    }
                 }
             }
         }

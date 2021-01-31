@@ -47,7 +47,7 @@ const FooterHome = () => {
             </Col>
             <Col xs={24} sm={24} md={12} lg={8} xl={8}>
               <List
-                header={<div className={styles.headerList}>Site info</div>}
+                header={<div className={styles.headerList}>Site Info</div>}
                 bordered={false}
                 dataSource={data2}
                 renderItem={item => (

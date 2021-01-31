@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
 import userReducer from "./Authorization";
-import  InforReducer  from "./Information";
+import InforReducer from "./Information";
 
 
 const rootReducer = combineReducers({

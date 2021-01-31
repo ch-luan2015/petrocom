@@ -10,12 +10,12 @@
             font-family: "Encode Sans";
             color: #48626f;
             text-align: center;
-            font-size: 2rem;
+            font-size: 1.7rem;
             font-weight: 700;
         }
         p {
-            text-align: left;
-            font-size: 1.1rem;
+            text-align: justify;
+            font-size: 1rem;
             box-sizing: border-box;
             margin-bottom: 1.2rem;
             line-height: 1.6;
@@ -23,49 +23,36 @@
             font-weight: 500;
             color: $black;
         }
-        @media (max-width: 424px) {
-            & {
-                h1 {
-                    text-align: center;
-                    font-size: 1.1rem;
-                }
-                p {
-                    text-align: justify;
-                    font-size: 0.8rem;
-                    margin-bottom: 1rem;
-                    color: $black;
-                }
-            }
-        }
-        @media (max-width: 767px) {
+
+        @media (table) {
             & {
                 padding: 1rem;
 
                 h1 {
                     text-align: center;
-                    font-size: 1.1rem;
+                    font-size: 2rem;
                     font-weight: 700;
                 }
                 p {
                     text-align: justify;
-                    font-size: 0.8rem;
+                    font-size: 1.2rem;
                     margin-bottom: 1rem;
                     color: $black;
                 }
             }
         }
-        @media (max-width: 1023px) {
+        @media (pc) {
             & {
                 padding: 1rem;
 
                 h1 {
                     text-align: center;
-                    font-size: 1.1rem;
+                    font-size: 2.5rem;
                     font-weight: 700;
                 }
                 p {
                     text-align: justify;
-                    font-size: 0.8rem;
+                    font-size: 1.2rem;
                     margin-bottom: 1rem;
                     color: $black;
                 }

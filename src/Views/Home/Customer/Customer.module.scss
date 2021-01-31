@@ -32,6 +32,11 @@
             }
             @include media(phone) {
                 margin-right: 0;
+                & {
+                    p {
+                        font-size: 1.125rem;
+                    }
+                }
             }
         }
         .customer_container__partnerList {

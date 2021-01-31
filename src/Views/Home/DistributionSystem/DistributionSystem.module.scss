@@ -29,6 +29,13 @@
 
     @include media(phone) {
         text-align: left;
+        a {
+            font-family: "Encode Sans";
+            color: #48626f;
+            text-align: center;
+            font-size: 1.7rem;
+            font-weight: 700;
+        }
     }
     @include media(tablet) {
         text-align: center;

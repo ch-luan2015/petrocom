@@ -9,7 +9,7 @@
 
         .footer_top__logo {
             padding: 0.5rem;
-            border-bottom: 2px solid $orange-under;
+            border-bottom: 2px solid $blue-ant;
         }
 
         @include media(tablet) {
@@ -34,6 +34,10 @@
                 font-size: 1.1rem;
                 color: $dark-gray5;
                 text-decoration: none;
+                @include media(phone) {
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                }
             }
             .footer_bottom__copyright {
                 padding: 0 1rem;
